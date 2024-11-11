@@ -1,4 +1,4 @@
-// import FormModal from "@/components/FormModal";
+import FormModal from "@/components/FormModal";
 import Pagination from "@/components/Pagination";
 import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
@@ -70,8 +70,8 @@ const ResultListPage = () => {
         <div className="flex items-center gap-2">
           {role === "admin" || role === "teacher" && (
             <>
-              {/* <FormModal table="result" type="update" data={item} />
-              <FormModal table="result" type="delete" id={item.id} /> */}
+              <FormModal table="result" type="update" data={item} />
+              <FormModal table="result" type="delete" id={item.id} />
             </>
           )}
         </div>
